@@ -50,12 +50,6 @@ while True:
             
             print(f"Your available withdrawal amount is ${balance} dollars.")
             
-            withdraw = int(input("How much do you want to withdraw: "))
-            
-            balance -= withdraw
-            
-            print(f"Your balance: ${balance}")
-            
             choose = int(input("Welcome to the ATM\n1 - Check balance\n2 - Deposit Money\n3 - Withdraw\n4 - Exit\n"))
 
 
