@@ -1,8 +1,12 @@
-choice = int(input("welcome to the simple calculator\nType one of the options below\n1 - Sum\n2 - Subtraction\n3 - Multiplication\n4 - Division\n5 - Leave calculator\nYour choice: "))
-
 while True:
 
-    if choice == 1:
+    choice = int(input("welcome to the simple calculator\nType one of the options below\n1 - Sum\n2 - Subtraction\n3 - Multiplication\n4 - Division\n5 - Leave calculator\nYour choice: "))
+    
+    if choice > 5 or choice < 1:
+
+        print("invalid option. Please try again")
+    
+    elif choice == 1:
 
         number1 = (input("Type the first number: "))
         number2 = (input("Type the last number: "))
@@ -154,16 +158,13 @@ while True:
         number1 = float(input("Type the first number: "))
         number2 = float(input("Type the last number: "))
 
-        if number1 == 0 or number2 == 0:
+        if number2 == 0:
 
             print("It is not possible to divide by zero.\n")
 
             choice = int(input("welcome to the simple calculator\nType one of the options below\n1 - Sum\n2 - Subtraction\n3 - Multiplication\n4 - Division\n5 - Leave calculator\nYour choice: "))
 
         else:
-            
-            number1 = (input("Type the first number: "))
-            number2 = (input("Type the last number: "))
             
             if '.' in number1 and '.' not in number2:
             
@@ -208,7 +209,7 @@ while True:
                 print(f"\n{number1} / {number2} : {result}")
             
                 choice = int(input("welcome to the simple calculator\nType one of the options below\n1 - Sum\n2 - Subtraction\n3 - Multiplication\n4 - Division\n5 - Leave calculator\nYour choice: "))
-    
+
     elif choice == 5:
 
         print("You leave the calculator")
