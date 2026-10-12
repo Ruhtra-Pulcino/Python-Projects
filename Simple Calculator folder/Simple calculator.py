@@ -10,174 +10,109 @@ while True:
 
         number1 = (input("Type the first number: "))
         number2 = (input("Type the last number: "))
-
-        if '.' in number1 and '.' not in number2:
-
+            
+        if '.' in number1 :
+        
             number1 = float(number1)
-            number2 = int(number2)
-
-            result = number1 + number2
-
-            print(f"\n{number1} + {number2} : {result}\n")     
-
-        elif '.' not in number1 and '.' in number2:
-
+            
+        else:
+            
             number1 = int(number1)
+            
+        if '.' in number2:
+            
             number2 = float(number2)
-
-            result = number1 + number2
-
-            print(f"\n{number1} + {number2} : {result}")
-
-        elif '.' not in number1 and '.' not in number2:
-
-            number1 = int(number1)
+            
+        else:
+            
             number2 = int(number2)
-
-            result = number1 + number2
-
-            print(f"\n{number1} + {number2} : {result}")
-
-        elif '.' in number1 and '.' in number2:
-
-            number1 = float(number1)
-            number2 = float(number2)
-
-            result = number1 + number2
-
-            print(f"\n{number1} + {number2} : {result}")
+        
+        result = number1 + number2
+        
+        print(f"\n{number1} + {number2} : {result}\n")
 
     elif choice == 2:
 
         number1 = (input("Type the first number: "))
         number2 = (input("Type the last number: "))
-        
-        if '.' in number1 and '.' not in number2:
-        
-            number1 = float(number1)
-            number2 = int(number2)
-        
-            result = number1 - number2
-        
-            print(f"\n{number1} - {number2} : {result}\n")
-         
-        elif '.' not in number1 and '.' in number2:
-        
-            number1 = int(number1)
-            number2 = float(number2)
-        
-            result = number1 - number2
-        
-            print(f"\n{number1} - {number2} : {result}")
-        
-        elif '.' not in number1 and '.' not in number2:
-        
-            number1 = int(number1)
-            number2 = int(number2)
-        
-            result = number1 - number2
-        
-            print(f"\n{number1} - {number2} : {result}")
-        
-        elif '.' in number1 and '.' in number2:
+            
+        if '.' in number1 :
         
             number1 = float(number1)
+            
+        else:
+            
+            number1 = int(number1)
+            
+        if '.' in number2:
+            
             number2 = float(number2)
+            
+        else:
+            
+            number2 = int(number2)
         
-            result = number1 - number2
+        result = number1 - number2
         
-            print(f"\n{number1} - {number2} : {result}")
+        print(f"\n{number1} - {number2} : {result}\n")
 
     elif choice == 3:
 
         number1 = (input("Type the first number: "))
         number2 = (input("Type the last number: "))
-        
-        if '.' in number1 and '.' not in number2:
-        
-            number1 = float(number1)
-            number2 = int(number2)
-        
-            result = number1 * number2
-        
-            print(f"\n{number1} * {number2} : {result}\n")     
-        
-        elif '.' not in number1 and '.' in number2:
-        
-            number1 = int(number1)
-            number2 = float(number2)
-        
-            result = number1 * number2
-        
-            print(f"\n{number1} * {number2} : {result}")
-    
-        
-        elif '.' not in number1 and '.' not in number2:
-        
-            number1 = int(number1)
-            number2 = int(number2)
-        
-            result = number1 * number2
-        
-            print(f"\n{number1} * {number2} : {result}")
-    
-        
-        elif '.' in number1 and '.' in number2:
+            
+        if '.' in number1 :
         
             number1 = float(number1)
+            
+        else:
+            
+            number1 = int(number1)
+            
+        if '.' in number2:
+            
             number2 = float(number2)
+            
+        else:
+            
+            number2 = int(number2)
         
-            result = number1 * number2
+        result = number1 * number2
         
-            print(f"\n{number1} * {number2} : {result}")
-    
+        print(f"\n{number1} * {number2} : {result}\n")
+
 
     elif choice == 4:
 
         number1 = (input("Type the first number: "))
         number2 = (input("Type the last number: "))
 
-        if number2 == 0:
+        if number2 == '0':
 
             print("It is not possible to divide by zero.\n")
 
         else:
             
-            if '.' in number1 and '.' not in number2:
+            if '.' in number1 :
             
                 number1 = float(number1)
+                
+            else:
+                
+                number1 = int(number1)
+                
+            if '.' in number2:
+                
+                number2 = float(number2)
+                
+            else:
+                
                 number2 = int(number2)
             
-                result = number1 / number2
+            result = number1 / number2
             
-                print(f"\n{number1} / {number2} : {result}\n")     
+            print(f"\n{number1} / {number2} : {result}\n")     
             
-            elif '.' not in number1 and '.' in number2:
-            
-                number1 = int(number1)
-                number2 = float(number2)
-            
-                result = number1 / number2
-            
-                print(f"\n{number1} / {number2} : {result}")
-            
-            elif '.' not in number1 and '.' not in number2:
-            
-                number1 = int(number1)
-                number2 = int(number2)
-            
-                result = number1 / number2
-            
-                print(f"\n{number1} / {number2} : {result}")
-            
-            elif '.' in number1 and '.' in number2:
-            
-                number1 = float(number1)
-                number2 = float(number2)
-            
-                result = number1 / number2
-            
-                print(f"\n{number1} / {number2} : {result}")
 
     elif choice == 5:
 
