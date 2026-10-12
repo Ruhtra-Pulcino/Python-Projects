@@ -1,0 +1,1 @@
+choice = int(input("welcome to the simple calculator\nType one of the options below\n1 - Sum\n2 - Subtraction\n3 -Multiplication\n4 - Division\n5 - Leave calculator")) 
