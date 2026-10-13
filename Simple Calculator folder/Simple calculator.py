@@ -1,121 +1,84 @@
+secret_number1 = 5
+secret_number2 = 7
+
+attempts = 5
+
+guess1 = int(input("Type the first number: "))
+guess2 = int(input("Type the second number: "))
+
 while True:
 
-    choice = int(input("welcome to the simple calculator\nType one of the options below\n1 - Sum\n2 - Subtraction\n3 - Multiplication\n4 - Division\n5 - Leave calculator\nYour choice: "))
+    if secret_number1 == guess1 and secret_number2 == guess2:
     
-    if choice > 5 or choice < 1:
-
-        print("invalid option. Please try again")
-    
-    elif choice == 1:
-
-        number1 = (input("Type the first number: "))
-        number2 = (input("Type the last number: "))
-            
-        if '.' in number1 :
-        
-            number1 = float(number1)
-            
-        else:
-            
-            number1 = int(number1)
-            
-        if '.' in number2:
-            
-            number2 = float(number2)
-            
-        else:
-            
-            number2 = int(number2)
-        
-        result = number1 + number2
-        
-        print(f"\n{number1} + {number2} : {result}\n")
-
-    elif choice == 2:
-
-        number1 = (input("Type the first number: "))
-        number2 = (input("Type the last number: "))
-            
-        if '.' in number1 :
-        
-            number1 = float(number1)
-            
-        else:
-            
-            number1 = int(number1)
-            
-        if '.' in number2:
-            
-            number2 = float(number2)
-            
-        else:
-            
-            number2 = int(number2)
-        
-        result = number1 - number2
-        
-        print(f"\n{number1} - {number2} : {result}\n")
-
-    elif choice == 3:
-
-        number1 = (input("Type the first number: "))
-        number2 = (input("Type the last number: "))
-            
-        if '.' in number1 :
-        
-            number1 = float(number1)
-            
-        else:
-            
-            number1 = int(number1)
-            
-        if '.' in number2:
-            
-            number2 = float(number2)
-            
-        else:
-            
-            number2 = int(number2)
-        
-        result = number1 * number2
-        
-        print(f"\n{number1} * {number2} : {result}\n")
-
-
-    elif choice == 4:
-
-        number1 = (input("Type the first number: "))
-        number2 = (input("Type the last number: "))
-
-        if number2 == '0':
-
-            print("It is not possible to divide by zero.\n")
-
-        else:
-            
-            if '.' in number1 :
-            
-                number1 = float(number1)
-                
-            else:
-                
-                number1 = int(number1)
-                
-            if '.' in number2:
-                
-                number2 = float(number2)
-                
-            else:
-                
-                number2 = int(number2)
-            
-            result = number1 / number2
-            
-            print(f"\n{number1} / {number2} : {result}\n")     
-            
-
-    elif choice == 5:
-
-        print("You leave the calculator")
+        print("Congrats you win.")
+        print(f"The numbers were: {secret_number1} | {secret_number2}")
 
         break
+
+    elif secret_number1 != guess1 and secret_number2 != guess2 and attempts > 0:
+
+        print("You got both of them wrong")
+
+        attempts -= 1
+
+        if attempts > 0:
+
+            print(f"You have {attempts} more attempts\n")
+
+            guess1 = int(input("Type the first number: "))
+            guess2 = int(input("Type the second number: "))
+
+        else:
+
+             print("What a shame you lost.\n")
+             print(f"The numbers were: {secret_number1} | {secret_number2}")
+                 
+             break
+
+    elif secret_number1 == guess1 and secret_number2 != guess2 and attempts > 0:
+
+        attempts -= 1
+
+        if attempts > 0:
+
+            print(f"you got the first number right: {secret_number1}")
+
+            print(f"You have {attempts} more attempts\n")
+
+            guess2 = int(input("Type the second number: "))
+
+        else: 
+            
+            print("What a shame you lsot.\n")
+            print(f"The numbers were: {secret_number1} | {secret_number2}")
+
+            break
+
+    elif secret_number1 != guess1 and secret_number2 == guess2 and attempts > 0:
+
+        attempts -= 1
+
+        if attempts > 0:
+
+            print(f"You got the second number right: {secret_number2}")
+
+            print(f"You have {attempts} more attempts\n")
+
+            guess1= int(input("Type the first number: "))
+
+        else:
+
+            print("what a shame you lost.\n")
+            print(f"The numbers were: {secret_number1} | {secret_number2}")
+
+            break
+
+    elif attempts == 0:
+    
+            print("What a shame you lost.\n")
+            print(f"The numbers were: {secret_number1} | {secret_number2}")
+    
+            break
+
+
+        
