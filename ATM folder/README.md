@@ -1,66 +1,44 @@
-"""
-Exercise: ATM Simulation
+# ATM Simulation
 
-Objective: Develop a Python program that simulates the
-basic operations of an ATM. The user must be able to
-check the balance, deposit money, withdraw money, and exit the program.
+## 📌 About the Project
 
-Requirements:
+This project is a Python exercise focused on practicing **conditional statements**, `while` loops, user input, and input validation.
 
-Check Balance:
+The program simulates a basic ATM system, allowing users to check their account balance, deposit money, withdraw money, and exit the program. It starts with an initial balance of R$ 1,000.00 and continues running until the user chooses to exit.
 
-- Upon selecting this option, the program must display the current account balance.
+## 🎯 Objectives
 
-Deposit Money:
+- Practice `while` loops to create an interactive menu.
+- Use `if`, `elif`, and `else` statements to handle user selections.
+- Work with variables to manage and update an account balance.
+- Validate user input and handle invalid options.
+- Apply conditional logic to prevent invalid deposits and withdrawals.
+- Use comparison operators to check whether transactions are valid.
+- Control program flow using `break` to exit the loop.
 
-- The user must be able to enter an amount to deposit into the account.
-- The amount must be positive.
-- After a successful deposit, the account balance must be updated and a
-confirmation message must be displayed.
+## ⚙️ How It Works
 
-Withdraw Money:
+1. The program initializes the account balance at R$ 1,000.00.
+2. A menu displays four options: Check Balance, Deposit Money, Withdraw Money, and Exit.
+3. The user selects an operation from the menu.
+4. If the user checks the balance, the program displays the current account balance.
+5. If the user makes a deposit, the program checks whether the amount is positive before updating the balance.
+6. If the user makes a withdrawal, the program checks whether the amount is positive and does not exceed the available balance.
+7. The program displays confirmation messages for successful transactions and error messages for invalid operations.
+8. The menu repeats until the user chooses the exit option.
 
-- The user must be able to enter an amount to withdraw from the account.
-- The amount must be positive and must not exceed the current balance.
-- After a successful withdrawal, the account balance must be
-updated and a confirmation message must be displayed.
+## 🛠️ Technologies
 
-Exit:
+- **Python 3**
+- `while` loops
+- `if`, `elif`, and `else` statements
+- Variables and arithmetic operations
+- Comparison operators
+- User input with `input()`
+- Formatted strings (f-strings)
+- Input validation
+- `break` statement
 
-- The user must be able to exit the program by choosing this option. 
+## 📚 What I Learned
 
-Input Validation:
-
-- The program must handle invalid inputs appropriately, displaying error messages when applicable. 
-
-User Interface:
-
-- The program must display a menu of options to the user and allow
-the selection of actions to be performed. 
-- The menu options must be presented within a loop, allowing
-multiple operations until the user chooses to exit. 
-
-ATM
-1 - Check Balance
-2 - Deposit Money
-3 - Withdraw Money
-4 - Exit
-Choose an option (1-4):
-
-Initial Balance:
-
-- The account must start with an initial balance of R$ 1000.00.
-
-Instructions:
-
-- Start by initializing the balance and entering a loop that displays the options menu. 
-- Implement each operation as described in the requirements. 
-- Make sure to test all options and possible scenarios to ensure
-the program works correctly.
-
-
-Tip: You can use `if`, `elif`, and `else` statements along with a `while` loop
-to handle user selections and keep the program running
-until the exit option is chosen.
-
-"""
+This exercise helps reinforce the fundamentals of Python programming by combining loops, conditional statements
