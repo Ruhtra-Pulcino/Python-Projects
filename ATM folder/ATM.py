@@ -1,69 +1,87 @@
 balance = 1000
 
-choose = int(input("Welcome to the ATM\n1 - Check balance\n2 - Deposit Money\n3 - Withdraw\n4 - Exit\n"))
+print("--------------------------------")
+choose = int(input("------ WELCOME TO THE ATM ------\n       1 - CHECK BALANCE\n       2 - DEPOSIT MONEY\n       3 - WITHDRAW\n       4 - EXIT\n        YOUR CHOICE: "))
+print("--------------------------------\n")
 
 while True:
 
     if choose < 1 or choose > 5:
-
-        print("Invalid option")
-
-        choose = int(input("Welcome to the ATM\n1 - Check balance\n2 - Deposit Money\n3 - Withdraw\n4 - Exit\n"))
+        print("--------------------------------")
+        print("       INVALID OPTION")
+        print("--------------------------------\n")
+        
+        print("--------------------------------")
+        choose = int(input("------ WELCOME TO THE ATM ------\n       1 - CHECK BALANCE\n       2 - DEPOSIT MONEY\n       3 - WITHDRAW\n       4 - EXIT\n        YOUR CHOICE: "))
+        print("--------------------------------\n")
 
     elif choose == 1:
 
-        print(f"Your balance: ${balance}")
-
-        choose = int(input("Welcome to the ATM\n1 - Check balance\n2 - Deposit Money\n3 - Withdraw\n4 - Exit\n"))
+        print("--------------------------------")
+        print(f"       YOUR BALANCE: ${balance}")
+        print("--------------------------------\n")
+        print("--------------------------------")
+        choose = int(input("------ WELCOME TO THE ATM ------\n       1 - CHECK BALANCE\n       2 - DEPOSIT MONEY\n       3 - WITHDRAW\n       4 - EXIT\n        YOUR CHOICE: "))
+        print("--------------------------------\n")
 
     elif choose == 2:
-
-        deposit = int(input("How much do you want to deposit: "))
+        print("--------------------------------")
+        deposit = int(input("HOW MUCH DO YOU WANT TO DEPOSIT: "))
 
         if deposit < 1:
 
-            print("Invalid option")
+            print("      INVALID OPTION\n")
 
-            deposit = int(input("How much do you want to deposit: "))
+            deposit = int(input("HOW MUCH DO YOU WANT TO DEPOSIT: "))
 
             balance += deposit
 
-            print(f"Your balance: {balance}")
-            
-            choose = int(input("Welcome to the ATM\n1 - Check balance\n2 - Deposit Money\n3 - Withdraw\n4 - Exit\n"))
+            print(f"       YOUR BALANCE: {balance}")
+            print("--------------------------------\n")
+            print("--------------------------------")
+            choose = int(input("------ WELCOME TO THE ATM ------\n       1 - CHECK BALANCE\n       2 - DEPOSIT MONEY\n       3 - WITHDRAW\n       4 - EXIT\n        YOUR CHOICE: "))
+            print("--------------------------------\n")
 
         else:
             
             balance += deposit
 
-            print(f"Your balance: {balance}")
-
-            choose = int(input("Welcome to the ATM\n1 - Check balance\n2 - Deposit Money\n3 - Withdraw\n4 - Exit\n"))
+            print(f"       YOUR BALANCE: {balance}")
+            print("--------------------------------\n")
+            print("--------------------------------")
+            choose = int(input("------ WELCOME TO THE ATM ------\n       1 - CHECK BALANCE\n       2 - DEPOSIT MONEY\n       3 - WITHDRAW\n       4 - EXIT\n        YOUR CHOICE: "))
+            print("--------------------------------\n")
 
     elif choose == 3:
-
-        withdraw = int(input("How much do you want to withdraw: "))
+        print("--------------------------------")
+        withdraw = int(input("HOW MUCH DO YOU WANT TO WITHDRAW: "))
 
         if withdraw > balance:
 
-            print("Withdrawal amount exceeds account balance")
-            
-            print(f"Your available withdrawal amount is ${balance} dollars.")
-            
-            choose = int(input("Welcome to the ATM\n1 - Check balance\n2 - Deposit Money\n3 - Withdraw\n4 - Exit\n"))
+            print("WITHDRAWAL AMOUNT EXCCEDS ACCOUNT BALANCE\n")
+                        
+            print(f"YOUR AVAILABLE WITHDRAWAL AMOUNT IS ${balance} DOLLARS.")
+            print("--------------------------------\n")
+            print("--------------------------------\n")
+            choose = int(input("------ WELCOME TO THE ATM ------\n       1 - CHECK BALANCE\n       2 - DEPOSIT MONEY\n       3 - WITHDRAW\n       4 - EXIT\n        YOUR CHOICE: "))
+            print("--------------------------------\n")
 
 
         else:
 
             balance -= withdraw
 
-            print(f"Your balance: ${balance}")
-
-            choose = int(input("Welcome to the ATM\n1 - Check balance\n2 - Deposit Money\n3 - Withdraw\n4 - Exit\n"))
+            print(f"       YOUR BALANCE: ${balance}")
+            print("--------------------------------\n")
+            print("--------------------------------")
+            choose = int(input("------ WELCOME TO THE ATM ------\n       1 - CHECK BALANCE\n       2 - DEPOSIT MONEY\n       3 - WITHDRAW\n       4 - EXIT\n        YOUR CHOICE: "))
+            print("--------------------------------\n")
         
 
     elif choose == 4:
-
-        print("You leave the ATM")
+        print("--------------------------------")
+        print("       YOU LEAVE THE ATM")
+        print("--------------------------------\n")
+                
 
         break
