@@ -1,6 +1,8 @@
 menu = print("", 38*"-", "\n  WELCOME TO THE TEMPERATURE CONVERTER", "\n", 38*"-", "\n", 7*" ", "  CHOOSE ONE OPTION\n", 10*" ", "  1 - CONVERT" "\n", 5*" ", "  2 - LEAVE THE SYSTEM")
 
 while True:
+
+    
     print("", 38*"-")
     option = input("         ENTER YOUR CHOICE HERE: ")
     print("", 38*"-")
